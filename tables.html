@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Uso de Tables</title>
+    <style>
+        table {
+            width: 90vw;
+            margin: 1em auto;
+        }
+        
+        table tbody tr:nth-child(2n) {
+            background-color: #999;
+        }
+        
+        .right {
+            text-align: right;
+        }
+        
+        .center {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Usando Tablas en documentos HTML</h1>
+        <nav>
+            <ul>
+                <li><a href="#table">Tabla Simple</a></li>
+                <li><a href="#tablecs">Tabla con ColSpan</a></li>
+                <li><a href="#tablers">Tabla con RowSpan</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="table">
+            <h2>Tabla Simple</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th>Celda E 1</th>
+                        <th>Celda E 2</th>
+                        <th>Celda E 3</th>
+                        <th>Celda E 4</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Celda D 1</td>
+                        <td>Celda D 2</td>
+                        <td>Celda D 3</td>
+                        <td>134</td>
+                    </tr>
+                    <tr>
+                        <td>Celda D 1</td>
+                        <td>Celda D 2</td>
+                        <td>Celda D 3</td>
+                        <td>200</td>
+                    </tr>
+                    <tr>
+                        <td>Celda D 1</td>
+                        <td>Celda D 2</td>
+                        <td>Celda D 3</td>
+                        <td>248</td>
+                    </tr>
+                    <tr>
+                        <td>Celda D 1</td>
+                        <td>Celda D 2</td>
+                        <td>Celda D 3</td>
+                        <td>400</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td>Celda F 1</td>
+                        <td>Celda F 2</td>
+                        <td>Celda F 3</td>
+                        <td>982</td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        <section id="tablecs">
+            <h2>Tablas con Col Span</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th colspan="4">Manejo de Colspan en Tablas</th>
+                    </tr>
+                    <tr>
+                        <th>Celda E 1</th>
+                        <th>Celda E 2</th>
+                        <th>Celda E 3</th>
+                        <th>Celda E 4</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Celda D 1</td>
+                        <td>Celda D 2</td>
+                        <td>Celda D 3</td>
+                        <td>134</td>
+                    </tr>
+                    <tr>
+                        <td>Celda D 1</td>
+                        <td>Celda D 2</td>
+                        <td>Celda D 3</td>
+                        <td>200</td>
+                    </tr>
+                    <tr>
+                        <td>Celda D 1</td>
+                        <td>Celda D 2</td>
+                        <td>Celda D 3</td>
+                        <td>248</td>
+                    </tr>
+                    <tr>
+                        <td>Celda D 1</td>
+                        <td>Celda D 2</td>
+                        <td>Celda D 3</td>
+                        <td>400</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td class="right" colspan="3">Total:</td>
+                        <td class="right">982</td>
+                    </tr>
+                    <tr>
+                        <td colspan="4" class="center"><q cite="unaurl.html">Este es una referencia a algo</q></td>
+                    </tr>
+                </tfoot>
+            </table>
+        </section>
+        <section id="tablers">
+            <h2>Tabla con Row Span</h2>
+            <table border="1">
+                <thead>
+                    <tr>
+                        <th colspan="5">Manejo de Colspan en Tablas</th>
+                    </tr>
+                    <tr>
+                        <th>Zona</th>
+                        <th>Ciudad</th>
+                        <th>1er Semestre</th>
+                        <th>2do Semestre</th>
+                        <th>Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td rowspan="2">Norte</td>
+                        <td>San Pedro Sula</td>
+                        <td colspan="2" rowspan="2">400</td>
+                        <td>800</td>
+                    </tr>
+                    <tr>
+                        <td>Gualala</td>
+                        <td>800</td>
+                    </tr>
+                    <tr>
+                        <td>Centro</td>
+                        <td>Tegucigalpa</td>
+                        <td>500</td>
+                        <td>100</td>
+                        <td>600</td>
+                    </tr>
+                    <tr>
+                        <td>Sur</td>
+                        <td>San Marcos de Colón</td>
+                        <td>200</td>
+                        <td>400</td>
+                        <td>600</td>
+                    </tr>
+                </tbody>
+                <tfoot>
+                    <tr>
+                        <td class="right" colspan="4">Total:</td>
+                        <td class="right">982</td>
+                    </tr>
+                    <tr>
+                        <td colspan="5" class="center"><q cite="unaurl.html">Este es una referencia a algo</q></td>
+                    </tr>
+                </tfoot>
+              </table>
+        </section>
+    </main>
+    <footer>
+        <section>Derechos Reservados 2020 &copy;</section>
+    </footer>
+</body>
+
+</html>

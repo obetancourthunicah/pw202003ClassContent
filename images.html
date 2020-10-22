@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imágenes</title>
+    <style>
+        body {
+            padding: 0px;
+            margin: 0px;
+        }
+        
+        .hero {
+            width: 100%;
+            padding: 0px;
+            margin: 0px;
+        }
+        
+        .hero1 {
+            width: 100vw;
+            height: 100vh;
+            background-image: url('imgs/diplomado_s.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: bottom center;
+        }
+        video{
+          display:block;
+          max-width: 50vw;
+          margin: 1em auto;
+        }
+        
+        @media(min-width:641px) {
+            .hero1 {
+                background-image: url('imgs/diplomado_m.jpg');
+            }
+        }
+        
+        @media(min-width:1025px) {
+            .hero1 {
+                background-image: url('imgs/diplomado_l.jpg');
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Imágenes</h1>
+    <picture>
+        <source srcset="imgs/diplomado_l.jpg" media="(min-width:1025px)">
+        <source srcset="imgs/diplomado_m.jpg" media="(min-width:641px)">
+        <img class="hero" src="imgs/diplomado_s.jpg" alt="Imagen de Diplomado" />
+    </picture>
+    <!-- <section class="hero1">
+        &nbsp;
+    </section>
+    -->
+    <section>
+        <h2>Audio Examples</h2>
+        <!--  autoplay no funciona con controls como atributo al mismo tiempo -->
+        <audio controls preload="metadata">
+        <source src="audio/into_it__kwon.mp3" type="audio/mpeg" />
+        Actualiza a un browser de verdad :)
+      </audio>
+    </section>
+
+    <section>
+        <h2>Video Examples</h2>
+        <!--  autoplay no funciona con controls como atributo al mismo tiempo -->
+      <video controls loop preload="metadata">
+        <source src="video/capacitacion_odonto.mp4" type="video/mp4" />
+        Actualiza a un browser de verdad :)
+      </video>
+    </section>
+</body>
+
+</html>

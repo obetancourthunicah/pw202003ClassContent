@@ -1,0 +1,33 @@
+
+https://www.ejemplo.com:8080/algun/recurso.html
+
+Protocolo
+https://
+http://
+ftp://
+sftp://
+ssh://
+mysql://
+mongodb://
+
+Servido | Host
+www.ejemplo.com -> hostname -> 190.12.30.123 ->host
+DNS -> resolve hostname -> IP Ipv4 Ipv6
+
+
+Puertos de Comunicación:
+:443 http secure https
+:80  http  --> 2020 -> no unsecure navigation
+
+:8080
+:5000
+:3000
+
+
+
+
+Navegador
+  -- Hand Shaking
+  -- Conection
+  -- Transport Data
+  -- Disconnect

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS tres formas de aplicar reglas CSS y dos permitidas</title>
+    <link rel="stylesheet" href="css/style.css" media="screen" />
+    <link rel="stylesheet" href="css/styleforprint.css" media="print" />
+
+    <style>
+        h2 {
+            text-shadow: 0px 0px 5px #444;
+            /*          desp_x desp_y difuminado color       */
+        }
+        
+        section {
+            background-color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>CSS tres formas de aplicar reglas CSS y dos permitidas</h1>
+    <h2>CSS inline as attribute style</h2>
+    <section style="background-color:#000;color:#fff;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, unde est ullam autem neque repellat similique, quaerat dicta doloribus in laboriosam soluta architecto nobis explicabo dolores perspiciatis quidem fuga culpa.
+    </section>
+    <h2>CSS como bloque style</h2>
+    <p>Se incorpora en el elemento HEAD</p>
+
+    <h2>CSS como un archivo .css ligado al documento</h2>
+    <p>Hola Mundo</p>
+    <p>Adios Mundo</p>
+    <ul>
+        <li>Blue : 1</li>
+        <li>Red : 7</li>
+        <li>Black: 10</li>
+    </ul>
+</body>
+
+</html>

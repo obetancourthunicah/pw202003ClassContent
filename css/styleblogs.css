@@ -1,0 +1,116 @@
+body {
+  background-color:#000;
+  color:#fff;
+  font-family: 'Lato', sans-serif;
+  padding:0px;
+  margin:0px;
+}
+
+header{
+  position:relative;
+  background-image: url('../imgs/diplomado_l.jpg');
+  min-height: 480px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+
+h1{
+  text-shadow: -3px 3px 3px #000, -3px -3px 5px #555;
+}
+
+main {
+  overflow: auto;
+  background-color:#aaa;
+  color:#333;
+  padding:1em; /* px em */
+  max-width:900px;
+  margin:1em auto;
+  line-height:2;
+  border-radius:5px;
+  clear:both;
+}
+
+img {
+  width:250px;
+  height:250px;
+  box-shadow:3px 3px 5px #000;
+}
+
+.floatRight {
+  float:right;
+  margin:1em;
+}
+
+.floatLeft {
+  float:left;
+  margin:1em;
+}
+
+
+header nav{
+  position:absolute;
+  top:0px;
+  left:0px;
+  width:100%;
+  background-color:rgba(0,0,0,0.7);
+  color:white;
+}
+header nav ul{
+  list-style: none;
+  padding:0px;
+  margin:0px;
+  display:flex;
+  align-items:center;
+  justify-content: flex-end;
+}
+
+header nav ul li a{
+  display:inline-block;
+  padding:1em 1.5em;
+  color:#fff;
+  text-decoration: none;
+  transition: background-color 1s ease;
+}
+
+header nav ul li a:hover{
+  background-color:rgba(255,255,255, 0.6);
+  transition: background-color 1s ease;
+}
+/*
+Unidades
+Absolutas
+px
+cm
+in
+m
+
+Relativas
+1em == 16px Medida por defecto del ancho de la letra m utilizada.
+<h1> 2rem <a 4rem ></a></h1>
+h1 = 32px
+a = 16px
+
+vh -- viewport Height 0 - 100
+vw -- viewport Width
+
+%
+rem
+*/ 
+
+/*
+Modelo de Cajas
+
+content box 
+padding box
+border box
+margin box
+
+top right bottom left (trbl)
+
+
+
+*/
