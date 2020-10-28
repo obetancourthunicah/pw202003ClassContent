@@ -1,0 +1,55 @@
+body{
+  margin:0px;
+  padding:0px;
+  /*Hack  IE Edge 14*/
+  font-size:16px;
+  font-size:100%;
+  font-size:1em;
+}
+h1 {
+  margin:0px;
+  font-size:2em;
+  background-color: #333;
+  color:#fff;
+  padding:3rem 1rem;
+  word-wrap: break-word;
+  margin: 1rem 0.5rem;
+  /*      Top|Bottom  Right|Left */
+  border: 0.025rem solid #000;
+}
+
+h1 span{
+  font-size:4rem;
+}
+
+p{
+  background-color: #aaa;
+}
+/*
+width
+height
+padding (top right bottom left)
+margin (TRBL)
+border (TRBL)
+
+*/
+.btn{
+  display: inline-block;
+  box-sizing: border-box;
+  background-color:#2e9648;
+  width:100%;
+  padding:1rem;
+}
+
+section{
+  background-color:#000;
+}
+section section{
+  display:inline-block;
+  box-sizing: border-box;
+  background-color:#ccc;
+  border:1px solid #000;
+  width:33.333%;
+  padding:1em;
+  
+}
