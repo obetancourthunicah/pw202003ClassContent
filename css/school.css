@@ -89,3 +89,70 @@ header nav ul li a:hover{
   border-radius: 50%;
   background-color:#ccc;
 }
+
+section.grid{
+  display:flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  background-color:#444;
+}
+section.grid section{
+  width:80%;
+  margin:0px auto;
+  display:flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items:center;
+}
+
+section.grid section img, section.grid section div{
+  display: block;
+  box-sizing: border-box;
+  width:50%;
+}
+
+section.grid section div{
+  padding:1em;
+  border:1px solid #333;
+  background-color: #fff;
+}
+
+
+
+@media (min-width:480px) {
+    section.grid section{
+        overflow: hidden;
+        width:380px;
+        height:380px;
+        margin:0px;
+        transform: translateY(-1.5rem);
+      }
+
+      section.grid section img, section.grid section div{
+        display: block;
+        box-sizing: border-box;
+        width:190px;
+        height:190px;
+
+      }
+}
+
+
+section.paralax {
+  background-image: url(../imgs/paralax.jpg);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom center;
+  min-width:100vw; /* viewport width */
+  min-height: 100vh; /* viewport height*/
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+section.paralax h2{
+  font-size:4rem;
+  color:#fff;
+}
