@@ -5,14 +5,22 @@ body {
   font-size: 16px;
   font-size:100%;
   font-size:1em;
+  margin-top:62px;
 }
 
 header{
+  background-color: #fff;
+  box-sizing: border-box;
+  top:0px;
+  left:0px;
+  width:100%;
+  position:fixed;
   display:flex;
   box-shadow: 0px 2px 5px #000;
   padding:0.25em;
   align-items: center;
   justify-content: space-between;
+  z-index:1000;
 }
 header h1{
   margin:0px;
@@ -43,6 +51,7 @@ header nav ul li a:hover{
 }
 
 .hero{
+  box-sizing: border-box;
   position: relative;
   width:100%;
   height: 400px;
@@ -54,6 +63,7 @@ header nav ul li a:hover{
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  padding:1em;
 }
 
 .hero h2{
@@ -80,7 +90,7 @@ header nav ul li a:hover{
   width: 160px;
   align-items: center;
   justify-content: space-around;
-  bottom:1em;
+  bottom:2em;
 }
 .hero .placers div {
   border:2px solid #000;
@@ -155,4 +165,71 @@ section.paralax {
 section.paralax h2{
   font-size:4rem;
   color:#fff;
+  padding:1em;
+}
+
+
+section.cards {
+  display:flex;
+  justify-content: center;
+  max-width: 960px;
+  margin:1em auto;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding:1em;
+}
+
+section.cards h2{
+  box-sizing: border-box;
+  width:100%;
+}
+section.cards .card{
+  display: flex;
+  width:300px;
+  margin: 1em 0.5em;
+  border: #000 solid 0.5px;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  box-shadow: 3px 3px 5px #000;
+  overflow: hidden;
+}
+
+section.cards .card img{
+  width:200px;
+  border-radius: 50%;
+  
+}
+section.cards .card p{
+  padding:1em;
+  text-align: center;
+}
+
+section.cards .card h3{
+  margin:0px;
+  margin-bottom: 1em;
+  box-sizing: border-box;
+  padding:1em;
+  text-align: center;
+  width:100%;
+  box-shadow: 0px 0px 5px #000;
+}
+
+section.cards .card button{
+  border:solid 2px #034110;
+  background-color: #0f4d1c;
+  font-size: 1rem;
+  color:#fff;
+  font-weight: bold;
+  padding:1em 2em;
+  box-sizing: border-box;
+  width:100%;
+  margin-bottom: 1em;
+  box-shadow: 1px 1px 3px #333;
+  border-radius: 27px;
+  cursor: pointer;
+}
+
+section.cards .card button:hover{
+  box-shadow: 3px 3px 5px #333;
 }
