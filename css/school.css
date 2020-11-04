@@ -233,3 +233,69 @@ section.cards .card button{
 section.cards .card button:hover{
   box-shadow: 3px 3px 5px #333;
 }
+
+
+footer{
+  display:flex;
+  flex-direction: column;
+  align-items:center;
+  justify-content: space-between;
+  padding:1em;
+  background-color: #14351b;
+  color:#fff;
+}
+
+footer nav ul{
+  display:flex;
+  list-style: none;
+  padding:0px;
+}
+
+footer section:nth-child(1){
+  order:1;
+}
+footer section:nth-child(2){
+  order:3;
+}
+footer section:nth-child(3){
+  order:2;
+}
+
+footer nav ul li a{
+  display:inline-block;
+  color:#fff;
+  text-decoration:none;
+  padding:0.5em 1em;/* (Top Right Bottom Left) *//* (Top Bottom) (Right Left) */ /* TRBL  Top Right Bottom Left*/
+  text-align:center;
+}
+
+footer nav ul li a img{
+  width:33px;
+  vertical-align: middle;
+}
+
+
+@media (min-width:480px){
+footer{
+  flex-direction:row;
+}
+
+footer nav ul{
+  display:block;
+}
+
+footer section:nth-child(1){
+  order:1;
+}
+footer section:nth-child(2){
+  order:2;
+}
+footer section:nth-child(3){
+  order:3;
+}
+
+footer nav ul li a{
+ text-align:left;
+}
+
+}
