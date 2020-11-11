@@ -1,0 +1,32 @@
+.paralax h2 {
+  animation: coolMovement 1s linear infinite;
+}
+
+@keyframes coolMovement{
+  0%{
+    transform: translate(0px,0px);
+    
+  }
+  15%{
+    transform: translate(40px,0px) rotate(30deg);
+  }
+  30%{
+    transform: translate(40px,40px) rotate(0deg);
+  }
+  45%{
+    transform: translate(0px,40px) rotate(-30deg);
+  
+  }
+  60%{
+    transform: translate(-40px,40px) rotate(0deg);
+  }
+  75%{
+    transform: translate(-40px,0px) rotate(180deg);
+  }
+  90%{
+    transform: translate(-20px,0px) rotate(90deg);
+  }
+  100%{
+    transform: translate(0px,0px) rotate(0deg);
+  }
+}

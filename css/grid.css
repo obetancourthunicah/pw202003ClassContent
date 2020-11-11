@@ -1,0 +1,114 @@
+* {
+  box-sizing: border-box;
+}
+.row {
+  display:flex;
+  flex-wrap: wrap;
+  padding:0.5em 1em;
+  border:1px solid #000;
+  width:100%;
+}
+
+[class*="col-"]{
+  width:100%;
+  border:1px solid #333;
+  transition: width 0.5s ease;
+  padding:1em;
+}
+
+.col-sm-4 {
+  width: calc(100%/(12/4));
+}
+
+.col-sm-6 {
+  width: calc(100%/(12/6));
+}
+.col-sm-12 {
+  /* es redundante */
+}
+
+@media (min-width:481px){
+  .col-md-1{width: calc(100%/12)}
+  .col-md-2{width: calc(100%/12*2)}
+  .col-md-3{width: calc(100%/12*3)}
+  .col-md-4{width: calc(100%/12*4)}
+  .col-md-5{width: calc(100%/12*5)}
+  .col-md-6{width: calc(100%/12*6)}
+  .col-md-7{width: calc(100%/12*7)}
+  .col-md-8{width: calc(100%/12*8)}
+  .col-md-9{width: calc(100%/12*9)}
+  .col-md-10{width: calc(100%/12*10)}
+  .col-md-11{width: calc(100%/12*11)}
+  .col-md-12{width:100%}
+
+  .col-offset-md-1{margin-left: calc(100%/12)}
+  .col-offset-md-2{margin-left: calc(100%/12*2)}
+  .col-offset-md-3{margin-left: calc(100%/12*3)}
+  .col-offset-md-4{margin-left: calc(100%/12*4)}
+  .col-offset-md-5{margin-left: calc(100%/12*5)}
+  .col-offset-md-6{margin-left: calc(100%/12*6)}
+  .col-offset-md-7{margin-left: calc(100%/12*7)}
+  .col-offset-md-8{margin-left: calc(100%/12*8)}
+  .col-offset-md-9{margin-left: calc(100%/12*9)}
+  .col-offset-md-10{margin-left: calc(100%/12*10)}
+  .col-offset-md-11{margin-left: calc(100%/12*11)}
+  .col-offset-md-12{margin-left:100%}
+
+}
+
+
+@media (min-width:1025px){
+  .col-l-1{width: calc(100%/12)}
+  .col-l-2{width: calc(100%/12*2)}
+  .col-l-3{width: calc(100%/12*3)}
+  .col-l-4{width: calc(100%/12*4)}
+  .col-l-5{width: calc(100%/12*5)}
+  .col-l-6{width: calc(100%/12*6)}
+  .col-l-7{width: calc(100%/12*7)}
+  .col-l-8{width: calc(100%/12*8)}
+  .col-l-9{width: calc(100%/12*9)}
+  .col-l-10{width: calc(100%/12*10)}
+  .col-l-11{width: calc(100%/12*11)}
+  .col-l-12{width:100%}
+
+  .col-offset-l-1{margin-left: calc(100%/12)}
+  .col-offset-l-2{margin-left: calc(100%/12*2)}
+  .col-offset-l-3{margin-left: calc(100%/12*3)}
+  .col-offset-l-4{margin-left: calc(100%/12*4)}
+  .col-offset-l-5{margin-left: calc(100%/12*5)}
+  .col-offset-l-6{margin-left: calc(100%/12*6)}
+  .col-offset-l-7{margin-left: calc(100%/12*7)}
+  .col-offset-l-8{margin-left: calc(100%/12*8)}
+  .col-offset-l-9{margin-left: calc(100%/12*9)}
+  .col-offset-l-10{margin-left: calc(100%/12*10)}
+  .col-offset-l-11{margin-left: calc(100%/12*11)}
+  .col-offset-l-12{margin-left:100%}
+}
+
+@media (min-width:2301px){
+  .col-xl-1{width: calc(100%/12)}
+  .col-xl-2{width: calc(100%/12*2)}
+  .col-xl-3{width: calc(100%/12*3)}
+  .col-xl-4{width: calc(100%/12*4)}
+  .col-xl-5{width: calc(100%/12*5)}
+  .col-xl-6{width: calc(100%/12*6)}
+  .col-xl-7{width: calc(100%/12*7)}
+  .col-xl-8{width: calc(100%/12*8)}
+  .col-xl-9{width: calc(100%/12*9)}
+  .col-xl-10{width: calc(100%/12*10)}
+  .col-xl-11{width: calc(100%/12*11)}
+  .col-xl-12{width:100%}
+
+  .col-offset-xl-1{margin-left: calc(100%/12)}
+  .col-offset-xl-2{margin-left: calc(100%/12*2)}
+  .col-offset-xl-3{margin-left: calc(100%/12*3)}
+  .col-offset-xl-4{margin-left: calc(100%/12*4)}
+  .col-offset-xl-5{margin-left: calc(100%/12*5)}
+  .col-offset-xl-6{margin-left: calc(100%/12*6)}
+  .col-offset-xl-7{margin-left: calc(100%/12*7)}
+  .col-offset-xl-8{margin-left: calc(100%/12*8)}
+  .col-offset-xl-9{margin-left: calc(100%/12*9)}
+  .col-offset-xl-10{margin-left: calc(100%/12*10)}
+  .col-offset-xl-11{margin-left: calc(100%/12*11)}
+  .col-offset-xl-12{margin-left:100%}
+}
