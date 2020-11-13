@@ -299,3 +299,15 @@ footer nav ul li a{
 }
 
 }
+
+
+
+.default {
+  width:100% !important;
+}
+
+@media (min-width:481px){
+  .default{
+    width:50%;
+  }
+}

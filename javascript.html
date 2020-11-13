@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Uso de Javascript Synxtax</title>
+    
+</head>
+
+<body>
+    <main id="clicked3">
+        <h1>Javascript</h1>
+        <ul>
+            <li onclick="alert('Clicked!!!!');">
+                Incoporar Javascript como atributo. ¡No Recomendado por Ing!
+            </li>
+            <li id="scriptblock">
+                Usar un bloque script
+            </li>
+            <li id="writeclick">
+                Usar como script externo
+            </li>
+        </ul>
+    </main>
+    <script>
+        document
+            .getElementById("scriptblock")
+            .addEventListener("click", function(e) {
+                e.preventDefault();
+                e.stopPropagation();
+                alert("Clicked2!!!")
+            });
+
+        document
+            .getElementById("clicked3")
+            .addEventListener("click", function(e) {
+                alert("Clicked Main");
+            });
+    </script>
+    <script src="js/syntax.js"></script>
+</body>
+
+</html>
