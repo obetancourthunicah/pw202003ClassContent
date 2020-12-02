@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms</title>
+    <script src="js/validateform.js"></script>
+</head>
+
+<body>
+    <h1>Formulario</h1>
+    <form method="get" action="forms.html" id="formDatosGenerales">
+        <fieldset>
+            <legend>Datos Generales</legend>
+            <label for="txtName">Nombre</label>
+            <input type="text" name="txtName" id="txtName" placeholder="Nombre Completo" />
+            <br/>
+            <label for="txtPswd">Contraseña</label>
+            <input type="password" name="txtPswd" id="txtPswd" placeholder="Contraseña" />
+            <br/>
+            <label for="txtEmail">Correo</label>
+            <input type="email" name="txtEmail" id="txtEmail" placeholder="correo electrónico" />
+            <br/>
+        </fieldset>
+        <label for="fchNacimiento">Fecha de Nacimiento</label>
+        <input type="date" name="fchNacimiento" id="fchNacimiento" placeholder="correo electrónico" />
+        <br/>
+        <label>Género</label>
+        <input type="radio" value="M" name="txtGenero" id="txtGeneroM" />
+        <label for="txtGeneroM">Masculino</label>
+        <input type="radio" value="F" name="txtGenero" id="txtGeneroF" />
+        <label for="txtGeneroF">Femenino</label>
+
+        <br/>
+        <label>Colores</label>
+        <input type="checkbox" value="*SI" name="bolColorRed" id="bolColorRed" />
+        <label for="bolColorRed">Rojo</label>
+        <input type="checkbox" value="*SI" name="bolColorBlue" id="bolColorBlue" />
+        <label for="bolColorBlue">Azul</label>
+        <br/>
+        <label for="cmbCiudad">Ciudades</label>
+        <select name="cmbCiudad" id="cmbCiudad">
+          <optgroup label="Zona Norte">
+            <option value="Opc1">Opción 1</option>
+            <option value="Opc2">Opción 2</option>
+          </optgroup>
+          <optgroup label="Zona Centro Sur">
+            <option selected value="Opc3">Opción 3</option>
+            <option value="Opc4">Opción 4</option>
+          </optgroup>
+        </select>
+        <br/>
+        <label for="txtLongText">Descripción</label><br/>
+        <textarea id="txtLongText" name="txtLongText" rows="20" placeholder="Escriba su bio"></textarea>
+        <br/>
+        <button type="submit" name="btnEnviar">Enviar</button>
+    </form>
+</body>
+
+</html>
