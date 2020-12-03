@@ -1,0 +1,23 @@
+input{
+  border:none;
+  padding:0.5em 1em;
+  border-bottom: #03036c solid 1px;
+  font-size: 1em;
+}
+
+input.error{
+  outline-color: #7c0e0e;
+  border-bottom: #7c0e0e solid 1px;
+}
+
+span.hide, span.show{
+  color:#7c0e0e;
+  font-size: 0.7em;
+  display:block;
+}
+span.hide{
+  display:none;
+}
+span.show{
+  display:relative;
+}
