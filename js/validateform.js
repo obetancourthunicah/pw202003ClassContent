@@ -64,3 +64,12 @@ function validateForm(e){
     //document.getElementById("formDatosGenerales").submit();
   }
 }
+
+
+//
+var textAreaValues = "Hoy mis vecinos solo rancheras han puesto.";
+var urlEncondedValue = encodeURI(textAreaValues);
+console.log(urlEncondedValue);
+//ES6 
+var textPatterns = `https://somehost.com/recurso.html?lt=${urlEncondedValue}`;
+console.log(textPatterns);

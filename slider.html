@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Slider Demo</title>
+    <link rel="stylesheet" href="css/slider.css" />
+    <script src="js/slider.js"></script>
+</head>
+
+<body>
+    <header>
+      <h1>Slider</h1>
+    </header>
+    <main>
+        <section class="sliderLens">
+            <div class="slidetrail">
+                <div class="slideframe">
+                    <picture>
+                        <source media="(min-width:1025px)" srcset="imgs/slider/s1_l.jpg">
+                        <source media="(min-width:720px)" srcset="imgs/slider/s1_m.jpg">
+                        <img src="imgs/slider/s1_s.jpg" alt="Slide 1">
+                    </picture>
+                    <h2>Slide 1</h2>
+                </div>
+                <div class="slideframe">
+                    <picture>
+                        <source media="(min-width:1025px)" data-srcset="imgs/slider/s2_l.jpg">
+                        <source media="(min-width:720px)" data-srcset="imgs/slider/s2_m.jpg">
+                        <img data-src="imgs/slider/s2_s.jpg" alt="Slide 2">
+                    </picture>
+                    <h2>Slide 2</h2>
+                </div>
+                <div class="slideframe">
+                    <picture>
+                        <source media="(min-width:1025px)" data-srcset="imgs/slider/s3_l.jpg">
+                        <source media="(min-width:720px)" data-srcset="imgs/slider/s3_m.jpg">
+                        <img data-src="imgs/slider/s3_s.jpg" alt="Slide 3">
+                    </picture>
+                    <h2>Slide 3</h2>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
+    
+</body>
+
+</html>
