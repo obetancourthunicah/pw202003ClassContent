@@ -7,10 +7,21 @@ const slider = function (){
   this.slides = 0;
   this.direction = 1; // 1 es hacia la derecha, -1 hacia la izquierda
   this.timerId = null;
+  this.slidePoints = null;
+  this.slidePointsHolder = null;
+  this.sliderLens = null;
 
 
   this.start = function(){
     this.sliderTrail.style.width="calc(" + this.slides +" * 100vw)";
+    // Creando los Pointers
+    for(var i = 0; i< this.slides; i++){
+      var newPointer = document.createElement("div");
+      newPointer.className = "pointer";
+      newPointer.dataset.index = (i);
+      newPointer.addEventListener("click", this.onPointerClick.bind(this));
+      this.slidePointsHolder.append(newPointer);
+    }
     this.tick();
   }
 
@@ -29,6 +40,15 @@ const slider = function (){
     }.bind(this), 3000);
   }
 
+  this.onPointerClick = function(e){
+      e.preventDefault();
+      e.stopPropagation();
+      var pointerIndex = Number(e.target.dataset.index);
+      clearTimeout(this.timerId);
+      this.moveTo(pointerIndex);
+      this.tick();
+  }
+
   this.moveTo = function(slide){
     console.log((slide * -100) + "vw)");
       this.sliderTrail.style.left = (slide * -100) + "vw";
@@ -38,7 +58,12 @@ const slider = function (){
   this.init = function(){
     this.sliderTrail = document.querySelector('.slidetrail');
     this.slideframes = document.querySelectorAll('.slideframe');
-    this.slides = this.slideframes.length
+    this.sliderLens = document.querySelector(".sliderLens");
+    this.slides = this.slideframes.length;
+    this.slidePointsHolder = document.createElement("div");
+    this.slidePointsHolder.className="pointHolder";
+    this.sliderLens.append(this.slidePointsHolder);
+
     for (let index = 0; index < this.slides; index++){ //por cada slideframe
       let hasSrcSet = false;
       let srcSets = this.slideframes[index].querySelectorAll("picture>source, picture>img"); // source + img

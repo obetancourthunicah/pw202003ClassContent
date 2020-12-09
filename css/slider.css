@@ -6,6 +6,11 @@ body{
   padding:0px;
   margin:0px;
 }
+
+header{
+  padding:0.5em 1em;
+}
+
 .sliderLens{
   position: relative;
   height: 640px;
@@ -44,4 +49,23 @@ body{
 
 .slideframe h2{
   z-index: 800;
+}
+
+.pointHolder{
+  width:100vw;
+  position: absolute;
+  bottom:0px;
+  left:0px;
+  text-align: center;
+  padding:0.5em;
+}
+.pointer{
+  display: inline-block;
+  border-radius: 50%;
+  width:9px;
+  height: 9px;
+  margin: 0.25em 0.5em;
+  background-color:#fff;
+  cursor: pointer;
+  box-shadow: 1px 1px 2px #000;
 }
