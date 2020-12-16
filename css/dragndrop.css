@@ -63,4 +63,25 @@ main {
 
 .vcard.correct{
   background-color:#264922;
+  transition: background-color 1s ease;
+  animation: correct 0.5s ease-in-out;
+}
+
+.vcard.incorrect{
+  animation: incorrect 0.35s ease-in-out;
+  animation-iteration-count: 2;
+}
+
+@keyframes incorrect{
+  20% {background-color:#CCC;transform: rotate(15deg);}
+  50% {background-color:#720308;transform: rotate(0deg);}
+  70% {background-color:#b37a00;transform: rotate(-15deg);}
+  100% {background-color:#CCC;transform: rotate(0deg);}
+}
+
+@keyframes correct{
+  20% {transform: translateY(10px);}
+  50% {transform: translateY(0px);}
+  70% {transform: translateY(-10px);}
+  100% {transform: translateY(0px);}
 }

@@ -34,6 +34,8 @@ document.addEventListener("DOMContentLoaded", function(){
         if (answer == question) {
           e.target.classList.toggle("correct");
         }else{
+          e.target.classList.toggle("incorrect");
+          setTimeout(function () { e.target.classList.toggle("incorrect");}, 1000);
           e.target.classList.toggle("over");
         }
       }
